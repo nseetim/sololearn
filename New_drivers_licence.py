@@ -38,7 +38,7 @@ if my_position_on_the_que <= number_of_attendants:
 if my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants ==0:
 	group=my_position_on_the_que//number_of_attendants
 elif my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants !=0:
-		group=(my_position_on_the_que//number_of_attendants)+1
+	group=(my_position_on_the_que//number_of_attendants)+1
 
 
 time=group*time_to_attend_to_one_person
