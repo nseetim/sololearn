@@ -35,9 +35,9 @@ if my_position_on_the_que <= number_of_attendants:
     print(time_to_attend_to_one_person)
 elif my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants ==0:
 	group=my_position_on_the_que//number_of_attendants
-	time=group*20
+	time=group*time_to_attend_to_one_person
 	print(time)
 elif my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants !=0:
 		group=(my_position_on_the_que//number_of_attendants)+1
-		time=group*20
+		time=group*time_to_attend_to_one_person
 		print(time)
