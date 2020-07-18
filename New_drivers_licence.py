@@ -31,13 +31,16 @@ all_names_sorted=sorted(names_of_others) # Sort all the names alphabetically
 #print(all_names_sorted)
 time_to_attend_to_one_person=20
 my_position_on_the_que=(all_names_sorted.index(my_name))+1 # one is added to the index because of the non-zero indexing style of python
+
 if my_position_on_the_que <= number_of_attendants:
     print(time_to_attend_to_one_person)
-elif my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants ==0:
+   
+if my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants ==0:
 	group=my_position_on_the_que//number_of_attendants
-	time=group*time_to_attend_to_one_person
-	print(time)
 elif my_position_on_the_que > number_of_attendants and my_position_on_the_que % number_of_attendants !=0:
 		group=(my_position_on_the_que//number_of_attendants)+1
-		time=group*time_to_attend_to_one_person
-		print(time)
+
+
+time=group*time_to_attend_to_one_person
+print(time)
+
