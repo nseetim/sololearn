@@ -1,3 +1,4 @@
+'''
 Average Word Length
 
 You are in a college level English class, your professor wants you to write an essay, but you need to find out the average length of all the words you use. It is up to you to figure out how long each word is and to average it out.
@@ -16,6 +17,7 @@ this phrase has multiple words
 
 Sample Output: 
 6
+'''
 
 import re, math
 user_input=(input())
