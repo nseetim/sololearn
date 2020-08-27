@@ -24,19 +24,18 @@ Sample Output:
 
 '''
 
+
+
 import re
 user_input=str(input())
 
-#pattern='(\$|T)x*G+x*(T|\$)' # The regex pattern here searches for every occurance of '$' or 'T' 
-# followed by zero or more occurance of 'x' then one or 
-# more occurance of a G then zero or more occurance of a 'T' or '$'
+#pattern='(\$|T)x*G+x*(T|\$)' # The regex pattern here searches for every occurance of '$' or 'T' followed by zero or more occurance of 'x' then one or more occurance of a G then zero or more occurance of a 'T' or '$'
 
-alarm_pattern='(Tx*[$]x*)|(x*[$]x*Tx*)x*G*' # So for the sake of figuring out the last test case 
-# i decided to look at the pattern that will set of an alarm then every other pattern 
-# will be regarded as quiet, although we should note that this approach isnt safe or secure for real life scenerios
+alarm_pattern='(Tx*[$]x*)|(x*[$]x*Tx*)x*G*' # So for the sake of figuring out the last test case i decided to
+# look at the pattern that will set of an alarm then every other pattern will be regarded as quiet, 
+# although we should note that this approach isnt safe or secure for real life scenerios
 
-# The same is achieved bellow by spliting the pattern into two but using ome pattern will probably
-# be more efficient and reduce the number of if statements 
+# The same is achieved bellow by spliting the pattern into two but using ome pattern will probably be more efficient and reduce the number of if statements 
 
 #pattern='\$x*Gx*T'
 #pattern1='Tx*Gx*\$'
@@ -48,9 +47,7 @@ else:
     print("quiet")
 
 
-
-# Non regex solution
-# Adapted from code by Mansi on sololearn
+#Adapted from code by Mansi
 
 user_input=input()
 check=0
